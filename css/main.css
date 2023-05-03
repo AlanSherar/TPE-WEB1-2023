@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #01001d;
+}
+
+header {
+    padding: 30px;
+    background-color: #010027;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+h2 {
+    margin: 30px;
+    text-align: center;
+}
+
+.aboutUsText {
+    padding: 50px;
+}
