@@ -4,36 +4,99 @@
     color: beige;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+html {
+  height: 100%;
+}
 body {
-    background-color: #01001d;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #01001d;
 }
-
-header {
-    padding: 30px;
-    background-color: #010027;
+header, footer {
+  padding: 30px;
+  background-color: #010027;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
 }
-
 nav ul {
     display: flex;
     align-items: center;
     list-style: none;
 }
-
 nav ul li {
     margin: 0 25px;
 }
-
-h2 {
-    margin: 30px;
-    text-align: center;
+a {
+  text-decoration: none;
+}
+h1, h2{
+  padding: 0 3rem;
+  margin: 2.5rem 0;
 }
 
-.aboutUsText {
-    padding: 50px;
+ol {
+  margin: 0 auto;
+  text-align: start;
+  list-style: disc;
+  width: 75%;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.presentacion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.presentacion div {
+  margin: 1em 0;
+  width: 40%;
+}
+.presentacion div p {
+  margin: 1.2em 0;
+  font-size: 1.1em;
+}
+.img-w-100 {
+  display: flex;
+  border-radius: 1em;
+  overflow: hidden;
+}
+.img-w-100 img{
+  width: 100%;
+  align-self: center;
+}
+.rec-btn {
+  display: inline-block;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 1em;
+  background-color: #4F22F2;
+}
+.about p, .faq p{
+  margin: 1rem 0;
+}
+.about, .faq{
+  padding: 0 6rem;
+  margin: 2.5rem 0;
+}
+.foot-copy, .foot-nav, .nav-rrss {
+  width: 20%;
+}
+.foot-nav, .nav-rrss {
+  list-style: none;
+}
+.nav-rrss {
+  display: flex;
+  justify-content: space-between;
 }
