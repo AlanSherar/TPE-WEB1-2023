@@ -124,6 +124,9 @@ textarea {
   background-color: beige;
   color: #01001d;
 }
+.d-block {
+  display: block;
+}
 .foot-copy, .foot-nav, .nav-rrss {
   width: 20%;
 }
