@@ -124,9 +124,6 @@ textarea {
   background-color: beige;
   color: #01001d;
 }
-.d-block {
-  display: block;
-}
 .foot-copy, .foot-nav, .nav-rrss {
   width: 20%;
 }
@@ -180,4 +177,17 @@ textarea{
 .nav-rrss {
   display: flex;
   justify-content: space-between;
+}
+
+.marginado {
+  margin: 0.3em;
+}
+.re-marginado {
+  margin: 1.5 em;
+}
+.d-block {
+  display: block;
+}
+.dark{
+  color: #01001d;
 }
