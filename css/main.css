@@ -68,14 +68,12 @@ footer {
   margin: 1.2em 0;
   font-size: 1.1em;
 }
-.img-w-100 {
-  display: flex;
-  border-radius: 1em;
-  overflow: hidden;
-}
-.img-w-100 img{
+
+.img-w-100{
   width: 100%;
-  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 textarea {
   text-align: center;
@@ -91,12 +89,27 @@ textarea {
 .portfolio {
   margin: 2em;
 }
-.cliente {
-  width: 70%;
-  margin: auto;
+.client {
+  background-color:#010027;
+  width: 80%;
+  margin: 1em auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-radius: 30px;
+}
+.client h3 {
+  font-size: 2em;
+  text-align: center;
+  margin: 0 auto;
+}
+.client:nth-child(odd) {
+  flex-direction: row;
+}
+.client-img {
+  margin: 3em;
+  border-radius: 30px;
+  overflow-y: hidden;
 }
 .about p, .faq p{
   margin: 1rem 0;
