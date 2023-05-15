@@ -4,6 +4,7 @@
     color: beige;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 html {
   height: 100%;
 }
@@ -83,12 +84,28 @@ footer {
   border-radius: 1em;
   background-color: #4F22F2;
 }
+.portfolio {
+  margin: 2em;
+}
+.cliente {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .about p, .faq p{
   margin: 1rem 0;
 }
-.about, .faq{
+.about, .faq{ 
   padding: 0 6rem;
   margin: 2.5rem 0;
+}
+#faq {
+  width: 20%;
+  margin: auto;
+  background-color: beige;
+  color: #01001d;
 }
 .foot-copy, .foot-nav, .nav-rrss {
   width: 20%;
@@ -99,4 +116,12 @@ footer {
 .nav-rrss {
   display: flex;
   justify-content: space-between;
+}
+.contact-links, .contact-links a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-links a span {
+  margin: 0 1em;
 }
