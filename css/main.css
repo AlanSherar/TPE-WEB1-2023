@@ -141,6 +141,20 @@ textarea{
   width: 1.4em;
   padding: 0.2em;
 }
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3.5em;
+  align-items:start;
+}
+.contact-links a {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+}
 .captcha {
   display: flex;
   justify-content: space-evenly;
