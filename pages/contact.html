@@ -23,6 +23,7 @@
     <main>
         <h1>Entremos en contacto y grabemos tu música!</h1>
         <div class="contact">
+          <!-- Contact Form -->
           <div>
             <form class="marginado" id="contact-form">
               <!-- Nombre completo -->
@@ -70,14 +71,16 @@
                 <textarea class="dark" name="comentarios" id="comentario" cols="35" rows="3" placeholder="Algo que sientas que es necesario aclarar."></textarea>
               </div>
               <div class="submit-captcha">
-                <img class="marginado" id="captcha-img" src="" alt="">
+                <div class="captcha">
+                  <img class="marginado" id="captcha-img" src="" alt="">
+                  <img class="dark" id="renovar-captcha" src="../imgs/captcha/reset.png">
+                </div>
                 <p id="res-mensaje"></p>
                 <input class="dark marginado" type="text" name="respuesta" id="respuesta">
                 <input type="submit" class="rec-btn" value="Enviar"></input>
               </div>
 
             </form>
-            <button class="dark" id="renovar-captcha">Cambiar imagen captcha</button>
           </div>
           <!-- Contact links -->
           <div class="contact-links re-marginado">
