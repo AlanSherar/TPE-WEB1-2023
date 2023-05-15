@@ -113,11 +113,22 @@ textarea{
 .submit-captcha {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
 }
 #captcha-img {
   width: 8em; 
+}
+#renovar-captcha {
+  background-color: white;
+  border-radius: 25%;
+  width: 1.4em;
+  padding: 0.2em;
+}
+.captcha {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
 }
 .nav-rrss {
   display: flex;
