@@ -4,6 +4,7 @@
     color: beige;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 html {
   height: 100%;
 }
@@ -87,12 +88,28 @@ textarea {
   border-radius: 1em;
   background-color: #4F22F2;
 }
+.portfolio {
+  margin: 2em;
+}
+.cliente {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .about p, .faq p{
   margin: 1rem 0;
 }
-.about, .faq{
+.about, .faq{ 
   padding: 0 6rem;
   margin: 2.5rem 0;
+}
+#faq {
+  width: 20%;
+  margin: auto;
+  background-color: beige;
+  color: #01001d;
 }
 .foot-copy, .foot-nav, .nav-rrss {
   width: 20%;
@@ -133,30 +150,4 @@ textarea{
 .nav-rrss {
   display: flex;
   justify-content: space-between;
-}
-.contact-links {
-  display: flex;
-  flex-direction: column;
-  padding-top: 3.5em;
-  align-items:start;
-}
-.contact-links a {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.contact {
-  display: flex;
-  justify-content: space-evenly;
-}
-.marginado {
-  margin: 0.3em;
-}
-.re-marginado {
-  margin: 1.5 em;
-}
-.d-block {
-  display: block;
-}
-.dark{
-  color: #01001d;
 }
