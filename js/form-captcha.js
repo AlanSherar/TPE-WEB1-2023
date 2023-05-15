@@ -1,18 +1,14 @@
 const captchasCant = 5;
 
 const form = document.getElementById("contact-form");
-if (form) {
-  form.addEventListener("submit", enviar);
-}
+form.addEventListener("submit", enviar);
 
 const captcha = document.getElementById("captcha-img");
-if (captcha) {
-  insertarCaptcha();
-  let renovarCaptcha = document.getElementById("renovar-captcha");
-  renovarCaptcha.addEventListener("click", insertarCaptcha)
-}
-const resMensaje = document.getElementById("res-mensaje");
+insertarCaptcha();
+const renovarCaptcha = document.getElementById("renovar-captcha");
+renovarCaptcha.addEventListener("click", insertarCaptcha)
 
+const resMensaje = document.getElementById("res-mensaje");
 
 function insertarCaptcha(){
   let num = Math.ceil(Math.random() * captchasCant);
@@ -75,7 +71,7 @@ function getSolution(captcha){
       break;
     case "5":
       res = "S4N";
-      break;
+      break;      
     default:
       res = "5L7";
       break;
