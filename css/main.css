@@ -68,8 +68,39 @@ footer {
   margin: 1.2em 0;
   font-size: 1.1em;
 }
-
-.img-w-100{
+.setup {
+  margin: 1em auto;
+  width: 80%;
+}
+.setup p {
+  padding: 0 9  em;
+}
+table {
+  margin: 3em auto;
+  width: 80%;
+  background-color: #010027;
+  border-radius: 30px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+thead {
+  background-color: #4f22f279;
+}
+td {
+  width: 25%;
+}
+th, td {
+  padding: 20px;
+}
+.table-img {
+  width: 100%;
+  margin: 0 auto;
+}
+.table-img img {
+  max-height: 10em;
+  max-width: 100%;
+}
+.img-w-100 {
   width: 100%;
   display: flex;
   align-items: center;
