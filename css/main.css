@@ -39,7 +39,6 @@ h1, h2{
   padding: 0 3rem;
   margin: 2.5rem 0;
 }
-
 ol {
   margin: 0 auto;
   text-align: start;
@@ -126,20 +125,24 @@ textarea {
   margin: 1em auto;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-evenly;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 1em;
 }
 .client h3 {
+  display: inline-block;
   font-size: 2em;
   text-align: center;
-  margin: 0 auto;
+  background-color: #4F22F2;
+  padding: 0.6em;
+  border-radius: inherit;
 }
 .client:nth-child(odd) {
   flex-direction: row;
 }
 .client-img {
   margin: 3em;
-  border-radius: 30px;
+  border-radius: inherit;
   overflow-y: hidden;
 }
 .about p, .faq p{
@@ -149,11 +152,12 @@ textarea {
   padding: 0 6rem;
   margin: 2.5rem 0;
 }
-#faq {
+.faq h2 {
+  padding: 0.3em;
   width: 20%;
-  margin: auto;
-  background-color: beige;
-  color: #01001d;
+  margin: 1em auto;
+  background-color: #4F22F2;
+  border-radius: 0.3em;
 }
 .foot-copy, .foot-nav, .nav-rrss {
   width: 20%;
@@ -168,7 +172,13 @@ a svg {
   width: 1.3em;
   height: 1.3em;
 }
-textarea{
+#contact-form {
+  display: inline-block;
+  padding: 2em;
+  border-radius: 1em;
+  background-color: #010027;
+}
+textarea {
   resize: none;
 }
 .submit-captcha {
@@ -177,7 +187,8 @@ textarea{
   align-items: center;
 }
 #captcha-img {
-  width: 8em; 
+  width: 8em;
+  border-radius: 0.5em;
 }
 #renovar-captcha {
   background-color: white;
@@ -188,16 +199,19 @@ textarea{
 .contact-links {
   display: flex;
   flex-direction: column;
-  padding-top: 3.5em;
-  align-items:start;
+  justify-content: center;
+  align-items: center;
 }
 .contact-links a {
+  display: flex;
+  align-items: center;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 .contact {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 2em;
 }
 .captcha {
   display: flex;
@@ -214,7 +228,7 @@ textarea{
   margin: 0.3em;
 }
 .re-marginado {
-  margin: 1.5 em;
+  margin: 1.5em;
 }
 .d-block {
   display: block;
