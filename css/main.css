@@ -122,10 +122,11 @@ textarea {
 .client {
   background-color:#010027;
   width: 80%;
+  padding: 2em;
   margin: 1em auto;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   border-radius: 1em;
 }
@@ -141,7 +142,7 @@ textarea {
   flex-direction: row;
 }
 .client-img {
-  margin: 3em;
+  margin: 0 3em;
   border-radius: inherit;
   overflow-y: hidden;
 }
@@ -223,7 +224,6 @@ textarea {
   display: flex;
   justify-content: space-between;
 }
-
 .marginado {
   margin: 0.3em;
 }
