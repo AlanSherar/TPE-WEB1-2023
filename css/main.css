@@ -237,3 +237,6 @@ textarea {
 .dark{
   color: #01001d;
 }
+.oculto{
+  display: none;
+}
