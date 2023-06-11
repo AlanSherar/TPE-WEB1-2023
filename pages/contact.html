@@ -39,54 +39,54 @@
               <!-- Nombre completo -->
               <label class="d-block marginado" for="info" >Información del cliente</label>
               <div> 
-                <input class="dark" type="text" name="nombre" placeholder="Nombre / Artístico(?)" required>
+                <input type="text" name="nombre" placeholder="Nombre / Artístico(?)" required>
               </div>
               <!-- Email -->
               <div>
-                <input class="dark" type="email" name="email" placeholder="Correo Electrónico" required>
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
               </div>
               <!-- Numero -->
               <div>
-                <input class="dark" id="tel" type="tel" name="telefono" placeholder="Telefono/Celular">
+                <input id="tel" type="tel" name="telefono" placeholder="Telefono/Celular">
               </div>
               <!-- Horarios -->
                 <label class="d-block marginado">Preferencias de horario: </label>
                   <label>Mañana:</label>
-                  <select class="dark" name="morning">
-                    <option class="dark" value="no">No</option>
-                    <option class="dark" value="si">Si</option>
+                  <select name="morning">
+                    <option value="no">No</option>
+                    <option value="si">Si</option>
                   </select>
                   <label>Tarde:</label>
-                  <select class="dark" name="tarde">
-                    <option class="dark" value="no">No</option>
-                    <option class="dark" value="si">Si</option>
+                  <select name="tarde">
+                    <option value="no">No</option>
+                    <option value="si">Si</option>
                   </select>
                   <label>Noche:</label>
-                  <select class="dark" name="noche">
-                    <option class="dark" value="no">No</option>
-                    <option class="dark" value="si">Si</option>
+                  <select name="noche">
+                    <option value="no">No</option>
+                    <option value="si">Si</option>
                   </select>
               <!-- Cantidad Musicos -->
               <div>
                 <label class="d-block marginado" for="cantidad">¿Cuántos músicos vendrán?</label>
-                <select class="dark" name="cantidad" id="cantidad">
-                  <option class="dark" value="uno">Solista.</option>
-                  <option class="dark" value="dos">Dueto.</option>
-                  <option class="dark" value="varios">Más de dos.</option>
+                <select name="cantidad" id="cantidad">
+                  <option value="uno">Solista.</option>
+                  <option value="dos">Dueto.</option>
+                  <option value="varios">Más de dos.</option>
                 </select>
               </div>
               <!-- Extra -->
               <div>
                 <label class="d-block marginado" for="comentario" >¿Algo que quieras añadir?</label>
-                <textarea class="dark" name="comentarios" id="comentario" cols="35" rows="3" placeholder="Algo que sientas que es necesario aclarar."></textarea>
+                <textarea name="comentarios" id="comentario" cols="35" rows="3" placeholder="Algo que sientas que es necesario aclarar."></textarea>
               </div>
               <div class="submit-captcha">
                 <div class="captcha">
                   <img class="marginado" id="captcha-img" src="" alt="">
-                  <img class="dark" id="renovar-captcha" src="../imgs/captcha/reset.png">
+                  <img id="renovar-captcha" src="../imgs/captcha/reset.png">
                 </div>
                 <p id="res-mensaje"></p>
-                <input class="dark marginado" type="text" name="respuesta" id="respuesta">
+                <input class="marginado" type="text" name="respuesta" id="respuesta">
                 <input type="submit" class="rec-btn" value="Enviar"></input>
               </div>
             </form>
