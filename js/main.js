@@ -1,11 +1,11 @@
 window.addEventListener("DOMContentLoaded", iniciarJS);
 
 function iniciarJS(){
-  const menuNav = document.querySelector("#menuDesplegable");
-  const mbMenu = document.querySelector("#mobileMenu");
-  menuNav.addEventListener("click", toggleMenu);
+  const menuBtn = document.querySelector(".menu-btn");
+  const mobileNavMenu = document.querySelector(".nav-menu");
+  menuBtn.addEventListener("click", toggleMenu);
   
   function toggleMenu(){
-    mbMenu.classList.toggle("oculto");
+    mobileNavMenu.classList.toggle("hide");
   }
 }
