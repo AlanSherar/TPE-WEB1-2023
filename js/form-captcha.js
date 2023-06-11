@@ -12,19 +12,18 @@ const resMensaje = document.getElementById("res-mensaje");
 
 function insertarCaptcha(){
   let num = Math.ceil(Math.random() * captchasCant);
-  while (num == captcha.alt) {
+  while (num == Number(captcha.alt)) {
     num = Math.ceil(Math.random() * captchasCant);
   }
-  const img = num+ ".jpg";
-  captcha.src = "../imgs/captcha/" + img;
+  captcha.src = "../imgs/captcha/" + num + ".jpg";
   captcha.alt = num;
 }
 
 function enviar(e){
   e.preventDefault();
   const formData = new FormData(form);
-
   const res = formData.get("respuesta");
+
   if (!checkCaptcha(res)) {
     resMensaje.innerText = "Intente nuevamente, esa respuesta no es correcta.";
   } else {
@@ -40,6 +39,7 @@ function enviar(e){
       cantidad: formData.get("cantidad"),
       comentarios: formData.get("comentarios")
     };
+
 
     resMensaje.innerText = "Muchas gracias "+ userData.nombre +". En breve nos estaremos comunicando!";
     
