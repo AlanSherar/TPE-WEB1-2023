@@ -163,6 +163,9 @@ th, td {
 .hide {
     display: none;
 }
+.dark{
+    color: #01001d;
+  }
 .menu-btn {
     width: 40px;
     border: none;
@@ -176,10 +179,9 @@ th, td {
 .foot-copy p {
     font-size: 0.85em;
 }
-
-
-
-
+form select, form button, form input, textarea{
+    color: black;
+}
 #contact-form {
     display: inline-block;
     padding: 1em;
