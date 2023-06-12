@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
       "patron": "Cardioide",
       "rango": "20Hz - 20kHz",
       "nivelPS": "144dB",
-      "best": true,
+      "best": false,
       "item": "Micro"
     },
     {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(){
       "patron": "Cardioide",
       "rango": "20Hz - 20kHz",
       "nivelPS": "130/150dB",
-      "best": false,
+      "best": true,
       "item": "Micro"
     },
     {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
       "frecuencia": "16 Hz - 20 kHz",
       "impedancia": "32 Ohmios",
       "sensibilidad": "113dB",
-      "best": true,
+      "best": false,
       "item": "Auri"
     },
     {
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function(){
       "frecuencia": "15 Hz - 20 kHz",
       "impedancia": "47 Ohmios",
       "sensibilidad": "96dB",
-      "best": false,
+      "best": true,
       "item": "Auri"
   }];
   const placas = [
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function(){
       "entradas": "4(+1 MIDI)",
       "salidas": "4",
       "monitorizacion": "Si",
-      "best": false,
+      "best": true,
       "item": "Placa"
     },
     {
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function(){
       "entradas": "2",
       "salidas": "2",
       "monitorizacion": "Si",
-      "best": true,
+      "best": false,
       "item": "Placa"
     },
     {
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function(){
           }
           columna.innerHTML += producto[key];
           fila.appendChild(columna);
-        } else if(producto[key]){
+        } else if(key == "best" && producto[key]){
           fila.classList.add("resaltar")
         }
       }
