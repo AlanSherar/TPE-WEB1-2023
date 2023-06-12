@@ -179,7 +179,7 @@ th, td {
 .foot-copy p {
     font-size: 0.85em;
 }
-form select, form button, form input, textarea{
+form select, form button, form input,form option, textarea{
     color: black;
 }
 #contact-form {
