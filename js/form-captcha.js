@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", ()=>{
+document.addEventListener("DOMContentLoaded", ()=>{
   const captchasCant = 5;
   
   const form = document.getElementById("contact-form");
