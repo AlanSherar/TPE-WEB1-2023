@@ -70,6 +70,8 @@ document.addEventListener("DOMContentLoaded", function(){
   formPlacas.addEventListener("submit", agregar);
   btnLimpiarSetup.addEventListener("click", vaciarSetup);
   btnSetupRandom.addEventListener("click", autoSetup);
+  
+  autoSetup();
 
   function agregar(e) {
     e.preventDefault();

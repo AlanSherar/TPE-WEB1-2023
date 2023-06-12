@@ -139,7 +139,8 @@ a {
 }
 table {
   font-size: 10px;
-  margin: 3em auto;
+  margin: 3em auto;  
+  min-width: 270px;
   width: 100%;
   background-color: #010027;
   border-radius: 10px;
@@ -181,6 +182,30 @@ th, td {
 }
 form select, form button, form input,form option, textarea{
     color: black;
+}
+.armar-setup {
+    background-color: #010027 ;
+    margin: 0 auto;
+    max-width: 304px;
+    padding: 1em;
+    border-radius: 1em;
+}
+.armar-setup form {
+    margin: 10px;
+}
+.armar-setup form label,
+.armar-setup form button {
+    display: block;
+    margin: 5px auto;
+}
+.armar-setup form *:not(select, input){
+    padding: 0.2em;
+}
+#setupRandom {
+    width: fit-content;
+}
+#tablaSetup {
+    max-width: 336px;
 }
 #contact-form {
     display: inline-block;
@@ -243,9 +268,7 @@ textarea {
 }
 
 
-
-
-@media screen and (min-width:426px){
+@media screen and (min-width:425px){
 
     body {
         height: 100%;
@@ -290,6 +313,21 @@ textarea {
     .nav-menu ul li a:hover {
         color: #5e36f1;
     }
+    .setup-container {
+        display: flex;
+        gap: 3em;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .armar-setup {
+        margin: 0;
+    }
+    #tablaSetup {
+        
+        width: 336px;
+        margin: 0;
+    }
+    
 }
 @media screen and (min-width: 768px) {
     html {

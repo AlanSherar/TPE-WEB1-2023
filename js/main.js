@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function(){
   menuBtn.addEventListener("click", toggleMenu);
   
   function toggleMenu(){
-    console.log("entra");
     mobileNavMenu.classList.toggle("hide");
   }
 

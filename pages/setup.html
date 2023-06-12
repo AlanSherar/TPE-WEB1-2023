@@ -41,6 +41,50 @@
           mercado y la comodidad que el cliente desee.
         </p>
       </div>
+      
+      <div class="setup-container">
+        <div class="armar-setup">
+          <form id="form_Micro">
+            <label for="micros">Micros</label>
+            <select name="options" id="selectMicros"></select>
+            <input type="number" name="cantidad" value="1" min="1"  max="5">
+            <button>Agregar a mi setup</button>
+          </form>
+          
+          <form id="form_Auri">
+            <label for="auris">Auris</label>
+            <select name="options" id="selectAuris"></select>
+            <input type="number" name="cantidad" value="1" min="1"  max="5">
+            <button>Agregar a mi setup</button>
+          </form>
+    
+          <form id="form_Placa">
+            <label for="placas">Placas de sonido</label>
+            <select name="options" id="selectPlacas"></select>
+            <input type="number" name="cantidad" value="1" min="1" max="1">
+            <button>Agregar a mi setup</button>
+          </form>
+  
+          <p>¡Tambien podes dejarnos a nosotros elegir tu Setup!</p>
+          <button class="dark" id="setupRandom">Crear setup completo</button>
+          <button class="dark" id="limpiarSetup">Borrar todo</button>
+        </div>
+
+        <div>
+          <table id="tablaSetup">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Item</th>
+                <th>Cantidad</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
       <table id="tablaMicros">
         <thead>
           <tr>
@@ -182,44 +226,7 @@
           <td>No</td>
         </tr>
       </table>
-
-      <form id="form_Micro">
-        <label for="micros">Micros</label>
-        <select name="options" id="selectMicros"></select>
-        <input type="number" name="cantidad" value="1" min="1"  max="5">
-        <button>Agregar a mi setup</button>
-      </form>
       
-      <form id="form_Auri">
-        <label for="auris">Auris</label>
-        <select name="options" id="selectAuris"></select>
-        <input type="number" name="cantidad" value="1" min="1"  max="5">
-        <button>Agregar a mi setup</button>
-      </form>
-
-      <form id="form_Placa">
-        <label for="placas">Placas de sonido</label>
-        <select name="options" id="selectPlacas"></select>
-        <input type="number" name="cantidad" value="1" min="1" max="1">
-        <button>Agregar a mi setup</button>
-      </form>
-
-      <button class="dark" id="setupRandom">Crear setup completo automáticamente</button>
-      <button class="dark" id="limpiarSetup">Borrar todo</button>
-
-      <table id="tablaSetup">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Item</th>
-            <th>Cantidad</th>
-          </tr>
-        </thead>
-        <tbody>
-
-        </tbody>
-      </table>
-
 
     </main>
     <footer>
