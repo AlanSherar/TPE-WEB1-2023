@@ -164,6 +164,10 @@ th, td {
 .hide {
     display: none;
 }
+.resaltar{
+  background-color: #02003a;
+  border: 2px dotted rgb(74, 74, 20);
+}
 .dark{
     color: #01001d;
   }
